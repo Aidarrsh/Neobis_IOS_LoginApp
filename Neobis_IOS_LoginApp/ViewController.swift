@@ -4,7 +4,7 @@
 //
 //  Created by Айдар Шарипов on 3/4/23.
 //
-
+// Creating a github repo
 import UIKit
 
 class ViewController: UIViewController {
