@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4629AD29DF02160088E880 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		1C91F0C229DB40BB00590075 /* Neobis_IOS_LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_IOS_LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C91F0C529DB40BB00590075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C91F0C729DB40BB00590075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		1C91F0B929DB40BB00590075 = {
 			isa = PBXGroup;
 			children = (
+				1C4629AD29DF02160088E880 /* Readme.md */,
 				1C91F0C429DB40BB00590075 /* Neobis_IOS_LoginApp */,
 				1C91F0C329DB40BB00590075 /* Products */,
 			);
