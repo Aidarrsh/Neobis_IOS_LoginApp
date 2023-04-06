@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,7 +49,7 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-nI-d3Z">
                                         <rect key="frame" x="44" y="593" width="303" height="53"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="303" id="SSn-yd-9IZ"/>
                                             <constraint firstAttribute="height" constant="53" id="Xfn-t5-Itz"/>
@@ -102,7 +101,7 @@
                                     <constraint firstItem="kww-Hg-9vl" firstAttribute="top" secondItem="wlL-nI-d3Z" secondAttribute="bottom" constant="9" id="K2H-sS-SZ5"/>
                                     <constraint firstItem="jfP-2u-2Xs" firstAttribute="top" secondItem="T9k-Yi-8D8" secondAttribute="bottom" constant="36" id="NRx-AO-yoP"/>
                                     <constraint firstAttribute="trailing" secondItem="jfP-2u-2Xs" secondAttribute="trailing" constant="46" id="REl-vr-waM"/>
-                                    <constraint firstItem="kww-Hg-9vl" firstAttribute="leading" secondItem="Mj1-mJ-Bpe" secondAttribute="leading" constant="135" id="Rw3-Qi-opF"/>
+                                    <constraint firstItem="kww-Hg-9vl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mj1-mJ-Bpe" secondAttribute="leading" constant="135" id="Rw3-Qi-opF"/>
                                     <constraint firstItem="wlL-nI-d3Z" firstAttribute="top" secondItem="sy1-JW-t6C" secondAttribute="bottom" constant="132" id="T44-BS-ZRc"/>
                                     <constraint firstAttribute="trailing" secondItem="wlL-nI-d3Z" secondAttribute="trailing" constant="46" id="eAg-AQ-dFd"/>
                                     <constraint firstItem="axk-So-vL0" firstAttribute="leading" secondItem="Mj1-mJ-Bpe" secondAttribute="leading" constant="79" id="fbV-8D-CNf"/>
@@ -140,8 +139,5 @@
     </scenes>
     <resources>
         <image name="envelope.open" catalog="system" width="128" height="122"/>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

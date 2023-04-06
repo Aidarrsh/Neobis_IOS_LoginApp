@@ -21,7 +21,7 @@ class RoundedCornerView: UIView {
     
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func ButtonAction(_ sender: UIButton) {
         print(LoginTextField.text ?? "Username")
         print(PasswordTextField.text ?? "Password")
@@ -35,10 +35,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.LoginTextField.delegate = self
+        self.PasswordTextField.delegate = self
         // Do any additional setup after loading the view.
         
         LoginTextField.layer.cornerRadius = 25.0
+        PasswordTextField.layer.cornerRadius = 25.0
         SignInButton.layer.cornerRadius = 25.0
+        SignInButton.layer.masksToBounds = true
         
         
 //        LoginTextField.placeholder = "Username"
@@ -54,6 +59,13 @@ class ViewController: UIViewController {
         PasswordTextField.isSecureTextEntry = true
         PasswordTextField.textColor = .white
         
-
+        }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ LoginTextField: UITextField) -> Bool {
+        LoginTextField.resignFirstResponder()
+        return true
     }
 }
